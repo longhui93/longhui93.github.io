@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Icarus</title>
   
-  <link href="/hexo-theme-icarus/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
   <link href="http://ppoffice.github.io/hexo-theme-icarus/"/>
   <updated>2016-07-31T19:45:46.748Z</updated>
