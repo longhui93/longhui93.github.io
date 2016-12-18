@@ -4,9 +4,9 @@
   <subtitle>龙辉的博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://longhui93.github.io/"/>
+  <link href="clhdsb.site/"/>
   <updated>2016-12-11T17:02:26.542Z</updated>
-  <id>https://longhui93.github.io/</id>
+  <id>clhdsb.site/</id>
   
   <author>
     <name>CLH</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>如何用Hexo搭建一个博客</title>
-    <link href="https://longhui93.github.io/2016/12/10/2016-12-11_hexo/"/>
-    <id>https://longhui93.github.io/2016/12/10/2016-12-11_hexo/</id>
+    <link href="clhdsb.site/2016/12/10/2016-12-11_hexo/"/>
+    <id>clhdsb.site/2016/12/10/2016-12-11_hexo/</id>
     <published>2016-12-09T16:00:00.000Z</published>
     <updated>2016-12-11T17:02:26.542Z</updated>
     
@@ -136,15 +136,15 @@
     
     </summary>
     
-      <category term="Hexo" scheme="https://longhui93.github.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="clhdsb.site/categories/Hexo/"/>
     
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://longhui93.github.io/2016/08/01/hello-world/"/>
-    <id>https://longhui93.github.io/2016/08/01/hello-world/</id>
+    <link href="clhdsb.site/2016/08/01/hello-world/"/>
+    <id>clhdsb.site/2016/08/01/hello-world/</id>
     <published>2016-07-31T19:45:46.748Z</published>
     <updated>2016-07-31T19:45:46.748Z</updated>
     
