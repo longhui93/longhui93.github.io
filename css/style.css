@@ -1310,13 +1310,13 @@ ol.toc {
   -ms-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
-.article-end-text-wrap {
-  margin: 5px 0;
+.nav-reward {
+  margin: 6px 0;
 }
-.article-end-text {
+.nav-reward-text {
   font-family: "微软雅黑";
-  font-size: 20px;
-  line-height: 1.6em;
+  font-size: 22px;
+  line-height: 1.5em;
   text-align: center;
   padding: 1em 2em;
   background: #ddd;
