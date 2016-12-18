@@ -43,7 +43,7 @@
         
           <a class="main-nav-link" href="/tags">Tags</a>
         
-          <a class="main-nav-link" href="/about">About</a>
+          <a class="main-nav-link" href="/">About</a>
         
       </nav>
       
@@ -70,7 +70,7 @@
         
           <td><a class="main-nav-link" href="/tags">Tags</a></td>
         
-          <td><a class="main-nav-link" href="/about">About</a></td>
+          <td><a class="main-nav-link" href="/">About</a></td>
         
         <td>
           <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="hidden" name="sitesearch" value="clhdsb.site"></form>
@@ -381,89 +381,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-                
         <p>上一篇文章呢就给大家介绍怎样来搭建自己的一个Hexo博客，那么搭好了就又闲不住又想折腾折腾<del>（毕竟自己的博客嘛，搞坏了搞崩了也没人知道）</del>那么今天就如更新预告所说的那样，为大家带来Hexo的第二篇文章——Hexo乱搞之付出与创收。</p>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这期介绍的东西不多，但都是建立在第一篇文章<a href="http://clhdsb.site/2016/12/10/2016-12-11_hexo/">如何用Hexo搭建一个博客</a>的基础上的，没看的同学赶紧去看啊(•̀ᴗ•́)و ̑̑ </p>
-<h1 id="第一步，要致富，先败家"><a href="#第一步，要致富，先败家" class="headerlink" title="第一步，要致富，先败家"></a>第一步，要致富，先败家</h1><p>嗯哼~要想别人记住你的博客，除了要写出高质量的文章外，最重要的还是要有一个好记的域名，那么话不多说，先搞个域名。</p>
-<p>域名呢是要买的，通常呢你可以到<a href="https://sg.godaddy.com/zh/" target="_blank" rel="external">狗爹(godaddy)</a>或者马云爸爸的<a href="https://wanwang.aliyun.com/" target="_blank" rel="external">万网</a>里面购买一个，我选择的是万网，大家可以根据这个来参考一下。</p>
-<p>先进去挑一个心仪的：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/wanwang_yuming.png" alt="万网"></p>
-<p>温馨提示：购买域名时不要只看第一年的价格，还要认真查看以后续费的价格，不能随随便便就中了马云的套路。</p>
-<p>我的域名是<a href="http://clhdsb.site/">clhdsb.site(clh大傻X)</a> 非常的好记。</p>
-<p>购买后进入万网的控制台→产品与服务→域名，进行域名管理：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/wanwang_console_yuming.png" alt="万网控制台"></p>
-<p>进入 域名管理后，点击解析：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/wanwang_yuming_parse.png" alt="万网-域名管理"></p>
-<p>这样就进入了解析设置；解析设置那里每个域名都至少有两个条目，主机记录为“@”的代表你域名没有“www”前缀的域名解析设置（如：clhdsb.site）,那么相应的主机记录为“www”就是带“www”的域名解析设置啦（如：www.clhdsb.site）。要想域名指向我们的博客，只要往这两个条目的记录值那里填写我们的博客IP就行了，如下图：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/wanwang_yuming_ip_fill.png" alt="域名解析-ip填写"></p>
-<p>那么，博客的IP是哪个呢？Ping一下就知道了，打开cmd命令行窗口，Ping一下你博客地址，也就是Github Page域名，就能拿到IP了：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/ping_ip.png" alt="Ping图示"></p>
-<p>填写后点击启用，这样你的域名就跟你的博客绑定了。（但是域名启用后不一定马上生效，最晚72小时）但是，此时你用这个域名去访问的话，显示的不是你博客的内容，而是Github的404错误页面，用原来的Github Page域名访问却正常。那为什么这样呢？原因呢是因为Github Page没有Publish到你这个域名上，所以我们还要做一步操作。</p>
-<p>这时候呢就要打开我们的Hexo博客文件夹，在source文件夹里新建一个名为CNAME的文件，把我们的域名填进去，例如：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/CNAME.png" alt="CNAME文件"></p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/CNAME_root.png" alt="CNAME文件路径"></p>
-<p>然后就是执行我们最喜欢的提交命令行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g -d</div></pre></td></tr></table></figure>
-<p>成功后Github就会Publish到我们的域名上。如果你想要检查是否成功的话，可以到你Github上对应你这个博客的仓库，点击Setting,然后查看Github Pages相关信息是否进行了修改：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/Github_setting.png" alt="Github Setting"></p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/Github_Pages.png" alt="Github Pages"></p>
-<p>Ok~域名就设置完成了，你就可以用自己的域名访问博客了。</p>
-<h1 id="第二步，添加第三方统计"><a href="#第二步，添加第三方统计" class="headerlink" title="第二步，添加第三方统计"></a>第二步，添加第三方统计</h1><p>添加第三方数据统计是博客管理很重要的一部分，这样才能知道你的<del>粉丝</del>访客喜欢什么内容嘛。那么要怎么加入第三方统计呢？如果你有认真看看Hexo主题的文件的话，你会在 Hexo文件夹/themes/某个主题/layout/_partial/ 这个文件夹内找到一个名为google-analytics.ejs的主题文件：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/google-analytics.png" alt="goole-analytics"></p>
-<p>也就是说Hexo是集成了Google统计的，但是，伟大的墙嘛~说多都是泪，只能用其他了。</p>
-<p>以友盟为例，先去<a href="https://i.umeng.com" target="_blank" rel="external">友盟</a>注册一个账号，然后点击U-Web统计，填写基本信息，然后获取友盟统计的JS代码：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/umeng_tongji.png" alt="Umeng JS代码"></p>
-<p>然后复制粘贴google-analytics.ejs文件并改名为umeng-analytics.ejs，将Google统计的代码换成友盟的代码，为了方便大家，我把我修改后的umeng-analytics.ejs代码放出来：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (theme.umeng_analytics)&#123; %&gt;</div><div class="line">&lt;!-- Umeng Analytics --&gt;</div><div class="line">&lt;script type="text/javascript"&gt;var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_你申请的网站Id'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D你申请的网站Id%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));&lt;/script&gt;</div><div class="line">&lt;!-- End Umeng Analytics --&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
-<p>然后修改主题的_config.yml(注意！是主题文件夹中的config文件！不是Hexo文件的那个全局Config文件！)，添加“umeng_analytics: true”字段：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Miscellaneous</span></div><div class="line">umeng_analytics: true</div><div class="line">google_analytics:</div><div class="line">favicon: logo.png</div><div class="line">twitter:</div><div class="line">google_plus:</div><div class="line">fb_admins:</div><div class="line">fb_app_id:</div></pre></td></tr></table></figure>
-<p>然后，在合适的地方放入umeng-analytics.ejs，我想把它放在网页的底端，所以请找到footer.ejs,然后添加一行代码：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- partial(<span class="string">'_partial/umeng-analytics'</span>) %&gt;</div></pre></td></tr></table></figure>
-<p>完整的footer.ejs为：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;footer id=<span class="string">"footer"</span>&gt;</div><div class="line">  &lt;% if (theme.sidebar === 'bottom')&#123; %&gt;</div><div class="line">    &lt;%- partial('_partial/sidebar') %&gt;</div><div class="line">  &lt;% &#125; %&gt;</div><div class="line">  &lt;div class="outer"&gt;</div><div class="line">    &lt;div id="footer-info" class="inner"&gt;</div><div class="line">      &amp;copy; &lt;% if (config.since &amp;&amp; config.since != date(new Date(), 'YYYY'))&#123; %&gt;&lt;%= config.since %&gt; - &lt;% &#125; %&gt;&lt;%= date(new Date(), 'YYYY') %&gt;  &lt;%= config.author || config.title %&gt; &lt;i class="fa fa-heartbeat"&gt;&lt;/i&gt; </div><div class="line">&lt;br&gt;</div><div class="line"></div><div class="line"> Powered by &lt;a href="http://hexo.io/" target="_blank"&gt;Hexo&lt;/a&gt; Theme by &lt;a href="https://github.com/ppoffice/hexo-theme-icarus"&gt;PPOffice&lt;/a&gt;</div><div class="line">       &lt;%- partial('_partial/umeng-analytics') %&gt; </div><div class="line">    &lt;/div&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">&lt;/footer&gt;</div></pre></td></tr></table></figure>
-<p>这样，你的博客就加入第三方统计了，百度统计等流程也参不多，希望大家能够举一反三。到友盟后台就可以查看统计情况。</p>
-<h1 id="第三步，添加打赏二维码"><a href="#第三步，添加打赏二维码" class="headerlink" title="第三步，添加打赏二维码"></a>第三步，添加打赏二维码</h1><p>嗨呀~自己辛辛苦苦写的文章码的代码嘛，虽大多都是不求回报无私奉献的，但是若果能帮到人并且得到他人青睐赏个几毛钱那也是最爽的，所以不妨把自己支付宝啊微信啊二维码放出来，让有喜欢你文章的朋友打赏你一波。那么，怎样才能把二维码放上去呢？有两种方法，请听我慢慢道来。</p>
-<h3 id="第一种，文章的尾部导航那里添加"><a href="#第一种，文章的尾部导航那里添加" class="headerlink" title="第一种，文章的尾部导航那里添加"></a>第一种，文章的尾部导航那里添加</h3><p>尾部导航呢就是每一篇文章底部那个“下一篇”“上一篇”那里，对应的是nav.ejs文件，先看看nav.ejs文件代码：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (post.prev || post.next)&#123; %&gt;</div><div class="line">&lt;nav id="article-nav"&gt;</div><div class="line">  &lt;% if (post.prev)&#123; %&gt;</div><div class="line">    &lt;a href="&lt;%- url_for(post.prev.path) %&gt;" id="article-nav-newer" class="article-nav-link-wrap"&gt;</div><div class="line">      &lt;strong class="article-nav-caption"&gt;&lt;%= __('nav.newer') %&gt;&lt;/strong&gt;</div><div class="line">      &lt;div class="article-nav-title"&gt;</div><div class="line">        &lt;% if (post.prev.title)&#123; %&gt;</div><div class="line">          &lt;%= post.prev.title %&gt;</div><div class="line">        &lt;% &#125; else &#123; %&gt;</div><div class="line">          (no title)</div><div class="line">        &lt;% &#125; %&gt;</div><div class="line">      &lt;/div&gt;</div><div class="line">    &lt;/a&gt;</div><div class="line">  &lt;% &#125; %&gt;</div><div class="line">  &lt;% if (post.next)&#123; %&gt;</div><div class="line">    &lt;a href="&lt;%- url_for(post.next.path) %&gt;" id="article-nav-older" class="article-nav-link-wrap"&gt;</div><div class="line">      &lt;strong class="article-nav-caption"&gt;&lt;%= __('nav.older') %&gt;&lt;/strong&gt;</div><div class="line">      &lt;div class="article-nav-title"&gt;&lt;%= post.next.title %&gt;&lt;/div&gt;</div><div class="line">    &lt;/a&gt;</div><div class="line">  &lt;% &#125; %&gt;</div><div class="line">&lt;/nav&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
-<p>这里主要是处理“上一篇”“下一篇”的逻辑，我们只要往前面加上显示二维码图片的js代码就行了，修改后为：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"nav-reward"</span>&gt;</div><div class="line">  &lt;div class="nav-reward-text"&gt;</div><div class="line">&lt;p&gt;支付宝打赏&lt;/p&gt;</div><div class="line">&lt;br&gt;</div><div class="line">&lt;p&gt;如果喜欢我的文章，可以支付宝随意打赏，支持我的工作&lt;/p&gt;</div><div class="line">&lt;img src="http://ob0n8jfz1.bkt.clouddn.com/zhifubao_qcode.png"/&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;% if (post.prev || post.next)&#123; %&gt;</div><div class="line">&lt;nav id="article-nav"&gt;</div><div class="line">  &lt;% if (post.prev)&#123; %&gt;</div><div class="line">    &lt;a href="&lt;%- url_for(post.prev.path) %&gt;" id="article-nav-newer" class="article-nav-link-wrap"&gt;</div><div class="line">      &lt;strong class="article-nav-caption"&gt;&lt;%= __('nav.newer') %&gt;&lt;/strong&gt;</div><div class="line">      &lt;div class="article-nav-title"&gt;</div><div class="line">        &lt;% if (post.prev.title)&#123; %&gt;</div><div class="line">          &lt;%= post.prev.title %&gt;</div><div class="line">        &lt;% &#125; else &#123; %&gt;</div><div class="line">          (no title)</div><div class="line">        &lt;% &#125; %&gt;</div><div class="line">      &lt;/div&gt;</div><div class="line">    &lt;/a&gt;</div><div class="line">  &lt;% &#125; %&gt;</div><div class="line">  &lt;% if (post.next)&#123; %&gt;</div><div class="line">    &lt;a href="&lt;%- url_for(post.next.path) %&gt;" id="article-nav-older" class="article-nav-link-wrap"&gt;</div><div class="line">      &lt;strong class="article-nav-caption"&gt;&lt;%= __('nav.older') %&gt;&lt;/strong&gt;</div><div class="line">      &lt;div class="article-nav-title"&gt;&lt;%= post.next.title %&gt;&lt;/div&gt;</div><div class="line">    &lt;/a&gt;</div><div class="line">  &lt;% &#125; %&gt;</div><div class="line">&lt;/nav&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
-<p>nav-reward和nav-reward-text为CSS样式，请往对应的主题的article.styl文件中添加：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">/*文章尾部导航-打赏样式*/</div><div class="line">.nav-reward</div><div class="line">  margin: 6px 0</div><div class="line">.nav-reward-text</div><div class="line">  font-family: "微软雅黑"</div><div class="line">  font-size: 22px</div><div class="line">  line-height: 1.5em</div><div class="line">  text-align:center</div><div class="line">  padding: 1em 2em</div><div class="line"></div><div class="line">  background: color-widget-background</div><div class="line">  box-shadow: 1px 2px 3px color-border</div><div class="line">  //border: 1px solid color-widget-border</div><div class="line">  border-radius: 3px</div></pre></td></tr></table></figure>
-<p>然后我们看看效果：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/hexo_qcode_show.png" alt="打赏"></p>
-<p>恩~效果还是有的。</p>
-<h3 id="往每篇文章的末尾加入打赏二维码"><a href="#往每篇文章的末尾加入打赏二维码" class="headerlink" title="往每篇文章的末尾加入打赏二维码"></a>往每篇文章的末尾加入打赏二维码</h3><p>阅读过上面的段落后，我们就应该对部分hexo文件的用途有点了解了吧，第二步那里的footer显然是底部栏的代码，nav.ejs对应的是文章导航，如果我们要在文章添加二维码，那么就应该找文章对应的代码，也就是article.ejs，按照惯例我们看看代码：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div></pre></td><td class="code"><pre><div class="line">&lt;article id=<span class="string">"&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"article article-type-&lt;%= post.layout %&gt;"</span> itemscope itemprop=<span class="string">"blogPost"</span>&gt;</div><div class="line">  &lt;div class="article-inner"&gt;</div><div class="line">    &lt;% if (post.banner)&#123; %&gt;</div><div class="line">      &lt;%- partial('post/banner') %&gt;</div><div class="line">    &lt;% &#125; %&gt;</div><div class="line">    &lt;%- partial('post/gallery') %&gt;</div><div class="line">    &lt;% if (post.link || post.title)&#123; %&gt;</div><div class="line">      &lt;header class="article-header"&gt;</div><div class="line">        &lt;%- partial('post/title', &#123;class_name: 'article-title'&#125;) %&gt;</div><div class="line">        &lt;div class="article-meta"&gt;</div><div class="line">          &lt;%- partial('post/date', &#123;class_name: 'article-date', date_format: null&#125;) %&gt;</div><div class="line">          &lt;%- partial('post/category') %&gt;</div><div class="line">          &lt;!-- 评论、访问统计部分，不蒜子 --&gt;</div><div class="line">          &lt;%- partial('post/comment') %&gt;</div><div class="line">          </div><div class="line">        &lt;/div&gt;</div><div class="line">      &lt;/header&gt;</div><div class="line">    &lt;% &#125; %&gt;</div><div class="line">    &lt;div class="article-entry" itemprop="articleBody"&gt;</div><div class="line">      &lt;% if (post.excerpt &amp;&amp; index)&#123; %&gt;</div><div class="line">        &lt;%- post.excerpt %&gt;</div><div class="line">        &lt;% if (theme.excerpt_link)&#123; %&gt;</div><div class="line">          &lt;p class="article-more-link"&gt;</div><div class="line">            &lt;a href="&lt;%- url_for(post.path) %&gt;#more"&gt;&lt;%= theme.excerpt_link %&gt;&lt;/a&gt;</div><div class="line">          &lt;/p&gt;</div><div class="line">        &lt;% &#125; %&gt;</div><div class="line">      &lt;% &#125; else &#123; %&gt;</div><div class="line">                &lt;% if (!index &amp;&amp; post.toc)&#123; %&gt;</div><div class="line">                    &lt;div id="toc" class="toc-article"&gt;</div><div class="line">                    &lt;strong class="toc-title"&gt;&lt;%= __('article.catalogue') %&gt;&lt;/strong&gt;</div><div class="line">    &lt;%- toc(post.content) %&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">&lt;% &#125; %&gt;</div><div class="line">        &lt;%- post.content %&gt;</div><div class="line">      &lt;% &#125; %&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    </div><div class="line">    &lt;footer class="article-footer"&gt;</div><div class="line">      &lt;a data-url="&lt;%- post.permalink %&gt;" data-id="&lt;%= post._id %&gt;" class="article-share-link"&gt;&lt;%= __('article.share') %&gt;&lt;/a&gt;</div><div class="line">      &lt;% if (post.comments &amp;&amp; config.disqus_shortname)&#123; %&gt;</div><div class="line">        &lt;a href="&lt;%- post.permalink %&gt;#comments" class="article-comment-link"&gt;&lt;%= __('article.comments') %&gt;&lt;/a&gt;</div><div class="line">      &lt;% &#125; else if (post.comments &amp;&amp; config.duoshuo_shortname)&#123; %&gt;</div><div class="line">        &lt;a href="&lt;%- post.permalink %&gt;#comments" class="article-comment-link"&gt;&lt;%= __('article.comments') %&gt;&lt;/a&gt;</div><div class="line">      &lt;% &#125; %&gt;</div><div class="line">      &lt;%- partial('post/tag') %&gt;</div><div class="line">    &lt;/footer&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">  &lt;% <span class="keyword">if</span> (!index)&#123; %&gt;</div><div class="line">    &lt;%- partial('post/nav') %&gt;</div><div class="line">  &lt;% &#125; %&gt;</div><div class="line">&lt;/article&gt;</div><div class="line"></div><div class="line">&lt;% <span class="keyword">if</span> (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname)&#123; %&gt;</div><div class="line">&lt;section id="comments"&gt;</div><div class="line">  &lt;div id="disqus_thread"&gt;</div><div class="line">    &lt;noscript&gt;Please enable JavaScript to view the &lt;a href="//disqus.com/?ref_noscript"&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">&lt;/section&gt;</div><div class="line">&lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (!index &amp;&amp; post.comments &amp;&amp; config.duoshuo_shortname)&#123; %&gt;</div><div class="line">  &lt;section id="comments"&gt;</div><div class="line">    &lt;div class="ds-thread" data-thread-key="&lt;%= page.path %&gt;-&lt;%= page.slug %&gt;" data-title="&lt;%= page.title %&gt;" data-url="&lt;%= page.permalink %&gt;" data-author-key="1" &gt;&lt;/div&gt;</div><div class="line">    &lt;script type="text/javascript"&gt;</div><div class="line">var duoshuoQuery = &#123;short_name:"longhui93"&#125;;</div><div class="line">  (function() &#123;</div><div class="line">    var ds = document.createElement('script');</div><div class="line">    ds.type = 'text/javascript';ds.async = true;</div><div class="line">    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';</div><div class="line">    ds.charset = 'UTF-8';</div><div class="line">    (document.getElementsByTagName('head')[0] </div><div class="line">     || document.getElementsByTagName('body')[0]).appendChild(ds);</div><div class="line">  &#125;)();</div><div class="line">  &lt;/script&gt;</div><div class="line">  &lt;/section&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
-<p>代码很长，我们要学会找突破口，这些代码的突破口在哪里呢？大家请把注意力放在“footer class=”article-footer”这行代码，这说明这是文章的底端，我们要往文章末尾加入打赏的二维码，就应该在这前面加，那么事情就很明朗了，在footer class=”article-footer“前加入以下代码：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 加入打赏 --&gt;</div><div class="line">&lt;div class="article-entry"&gt;</div><div class="line">&lt;div&gt;</div><div class="line">    &lt;hr&gt;</div><div class="line">    &lt;hr&gt;</div><div class="line">&lt;p&gt;&lt;strong&gt;支付宝打赏&lt;/strong&gt;</div><div class="line">&lt;br&gt;</div><div class="line">如果喜欢我的文章，可以支付宝随意打赏，支持我的工作&lt;/p&gt;</div><div class="line">&lt;img src="http://ob0n8jfz1.bkt.clouddn.com/zhifubao_qcode.png"/&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
-<p>然后我们再来看看效果：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/hexo_qcode_show_2.png" alt="打赏"></p>
-<p>好的,功能实现了，大家可以根据自己喜欢选一种实现方式，或者提出更好的想法。大家也可以把打赏的那些代码封装成一个ejs，在主题的config文件添加相应的字段，然后进行引用。</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>就像我在第一篇Hexo的文章所说的那样，我是不懂前端知识的，这是都是我自己找资料，自己试验自己不断尝试而得出的成果，希望能够帮助到你。当然呢，Hexo的学习进程不会因为这就满足，我有好的发现还是会继续分享给大家(•̀ᴗ•́)و ̑̑ </p>
-<h1 id="安利"><a href="#安利" class="headerlink" title="安利"></a>安利</h1><p>嗨呀~又到了大家都喜欢的安利时间了。今天就给大家安利一款好用的Markdown编辑器–<a href="http://www.typora.io/" target="_blank" rel="external">Typora</a>。个人五颗星推荐，用它来写Markdown写博客爽的不要不要的，好在哪里我就不多说，你用你也爽。<img src="http://ob0n8jfz1.bkt.clouddn.com/zhencheng_yanshen.png" alt="看我真诚的安利"></p>
-<h1 id="更新预告"><a href="#更新预告" class="headerlink" title="更新预告"></a>更新预告</h1><p>说好的键盘呢？？？！！！无良博主欺骗纯真群众！吃我一巴掌！</p>
-<p>(￣ε(#￣)☆╰╮o(￣▽￣///) 最近工作忙，键盘这个东西啊还真不好说，我尽量。。。尽量。。。</p>
-
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这期介绍的东西不多，但都是建立在第一篇文章<a href="http://clhdsb.site/2016/12/10/2016-12-11_hexo/">如何用Hexo搭建一个博客</a>的基础上的，没看的同学赶紧去看啊(•̀ᴗ•́)و ̑̑<br>
+        
+          <p class="article-more-link">
+            <a href="/2016/12/19/2016-12-18-Hexo乱搞之付出与创收/#more">Read More</a>
+          </p>
+        
       
     </div>
     
    <!-- 加入打赏 -->
    <!-- 打赏 -->
 
+   
 
-<div class="article-entry">
-<div>
-    <hr>
-    <hr>
-<p><i class="fa fa-credit-card"></i> <strong>支付宝打赏</strong>
-<br>
-如果喜欢我的文章，可以支付宝随意打赏，支持我的工作</p>
-<img src="http://ob0n8jfz1.bkt.clouddn.com/zhifubao_qcode.png"/>
-  </div>
-</div>
 
     <footer class="article-footer">
-      <a data-url="clhdsb.site/2016/12/19/2016-12-18-Hexo乱搞之付出与创收/" data-id="ciwv1vadv0004qkwtomlear83" class="article-share-link">分享到</a>
+      <a data-url="clhdsb.site/2016/12/19/2016-12-18-Hexo乱搞之付出与创收/" data-id="ciwv3qsrq0002g0wt5fpplapp" class="article-share-link">分享到</a>
       
         <a href="clhdsb.site/2016/12/19/2016-12-18-Hexo乱搞之付出与创收/#comments" class="article-comment-link">去评论</a>
       
@@ -526,134 +461,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-                
         <p>作为一个程序员或技术研究者，每每解决了一个问题或发现了一个新的技术点，自带闷骚属性的猿们往往都抑制不住心里的“骚”动，想找个人倾（炫）诉（耀），可惜的是程序员与生俱来的“找不到对象”光环，最终都是陷入无处倾诉的地步（哪怕有对象你若跟对方说代码的事情，难免被对方反手就是一个按太阳穴轮刮眼眶赏了个耳聪目明）；有苦不能说，有X不能装是最痛苦的！所以，you,need a place to zhuangbi!哎~那搭个博客<br>，写几篇文章，放上你的Github链接，一言不合还可以在尾部放个支付宝什么的，不就满足了你心里的那股骚动了吗？所有说，博客对于程序员来说，意义就在于~引用某乎的说法：与世界分享你的知识、经验和见解（还有逼格）。</p>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>那么建个博客是很简单的，但是程序员往往爱折腾爱作死，想自己搭。博客，说白了不就个网页吗，搞个服务器，搞点html，发布上去，不就完了。但是！好死不死你跟我一样是一名安卓开发者！又好死不死你跟我一样不懂服务器还不懂前端，网上一搜，别人的博客是用WordPress搞的动态博客，说啥都要一个服务器，好死不死你又跟我一样穷，那么，梦想破灭了吗？那倒不至于，有动就有静嘛~如果你是一个不懂服务器又不懂前端而且又想做自己的博客，可以，请跟着我的脚步，我会带你“真真正正”做一个属于你自己的博客。</p>
-<h1 id="个人提醒"><a href="#个人提醒" class="headerlink" title="个人提醒"></a>个人提醒</h1><p>虽然这个没什么难度，但是这东西需要大量的时间去折腾,所以搞之前建议做好心理准备。</p>
-<h1 id="先说说Github"><a href="#先说说Github" class="headerlink" title="先说说Github"></a>先说说Github</h1><p><img src="http://ob0n8jfz1.bkt.clouddn.com/github_logo.jpg" alt="github"></p>
-<h3 id="Github的优点"><a href="#Github的优点" class="headerlink" title="Github的优点"></a>Github的优点</h3><ul>
-<li>GitHub 是一个面向开源及私有软件项目的托管平台，用Git进行版本控制（比SVN高到不知哪里去了）。</li>
-<li>Github 上面大牛云集，有事没事泡一泡，能学到很多知识。</li>
-<li>使用Github的Github Page来搭建博客，是免费的。<h3 id="Github-Page"><a href="#Github-Page" class="headerlink" title="Github Page"></a>Github Page</h3>Github Pages可以被认为是用户编写的、托管在github上的静态网页。<h3 id="使用Github-Page的好处"><a href="#使用Github-Page的好处" class="headerlink" title="使用Github Page的好处"></a>使用Github Page的好处</h3></li>
-<li>呃。。。如上所说，免费~免费~免费。</li>
-<li>可以绑定域名(但暂时只能绑定一个)。</li>
-</ul>
-<h1 id="搭建的第一步：安装Node-js"><a href="#搭建的第一步：安装Node-js" class="headerlink" title="搭建的第一步：安装Node.js"></a>搭建的第一步：安装Node.js</h1><p>在 Windows 环境下安装 Node.js ，仅须到<a href="https://nodejs.org/en/download/" target="_blank" rel="external">Node.js官网下载</a>安装文件并执行即可完成安装。<br><img src="http://ob0n8jfz1.bkt.clouddn.com/node_js_version.png" alt="Node.js各个版本"><br>安装步骤也简单，一直下一步到底就行，并且安装后也无需配置环境变量。</p>
-<h1 id="第二步：安装Git"><a href="#第二步：安装Git" class="headerlink" title="第二步：安装Git"></a>第二步：安装Git</h1><p>下载 msysgit 并执行即可完成安装。(你可以上<a href="https://git-for-windows.github.io/" target="_blank" rel="external">官网下载</a>，如果你的系统是64位，可以来<a href="https://pan.baidu.com/s/1i4xAM9Z" target="_blank" rel="external">这里下载</a>)。<br>打开Git的话就是在你需要用到Git的地方按鼠标右键，点击“Git Bash”,如下图：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/git_bash.png" alt=""></p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/git_bash_console.png" alt="Git Bash与控制台"></p>
-<p>想查看Git的更多教程话可以查看：<a href="http://git.oschina.net/progit/" target="_blank" rel="external">这个东西</a> 或者 <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/" target="_blank" rel="external">这个东西</a> 。</p>
-<p>#第三步:Hexo<br>Hexo 是一个基于nodejs 的静态博客网站生成器，作者是来自台湾的 Tommy Chen。</p>
-<p>特点：</p>
-<ul>
-<li>不可思议的快速 ─ 只要一眨眼静态文件即生成完成。</li>
-<li>支持 Markdown。</li>
-<li>仅需一道指令即可部署到 GitHub Pages 和 Heroku。</li>
-<li>已移植 Octopress 插件。</li>
-<li>高扩展性、自订性。</li>
-<li>兼容于 Windows, Mac &amp; Linux。</li>
-</ul>
-<p><a href="https://www.oschina.net/p/hexo" target="_blank" rel="external">(来源网站)</a></p>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>点击鼠标右键，列表点击Git Bash Here，输入npm命令安装：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div><div class="line"></div><div class="line">npm install hexo --save</div><div class="line"></div><div class="line">#如果命令无法运行，可以尝试更换taobao的npm源</div><div class="line"></div><div class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure>
-<h3 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h3><h4 id="建立Hexo文件夹"><a href="#建立Hexo文件夹" class="headerlink" title="建立Hexo文件夹"></a>建立Hexo文件夹</h4><p>安装完成后，新建一个你想存放博客文件的文件夹，在文件夹中点击右键鼠标，点击Git Bash Here，进入Git命令框，执行以下操作。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
-<p>初始化完成后文件夹的文件目录应为：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/hexo_init_filetree.png" alt="Hexo文件目录"></p>
-<h4 id="安装各种Hexo插件"><a href="#安装各种Hexo插件" class="headerlink" title="安装各种Hexo插件"></a>安装各种Hexo插件</h4><p>这些插件最好全都安装：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-index --save</div><div class="line">npm install hexo-generator-archive --save</div><div class="line">npm install hexo-generator-category --save</div><div class="line">npm install hexo-generator-tag --save</div><div class="line">npm install hexo-server --save</div><div class="line">npm install hexo-deployer-git --save</div><div class="line">npm install hexo-deployer-heroku --save</div><div class="line">npm install hexo-deployer-rsync --save</div><div class="line">npm install hexo-deployer-openshift --save</div><div class="line">npm install hexo-renderer-marked@0.2 --save</div><div class="line">npm install hexo-renderer-stylus@0.2 --save</div><div class="line">npm install hexo-generator-feed@1 --save</div><div class="line">npm install hexo-generator-sitemap@1 --save</div></pre></td></tr></table></figure>
-<p>整个过程中最麻烦就是这一步，在国内的网络环境下容易出各种各样的问题，有可能需要重试多次，这是最耗时间的。</p>
-<h4 id="本地查看"><a href="#本地查看" class="headerlink" title="本地查看"></a>本地查看</h4><p>历经千辛万苦后博客终于建好了，那么~可以本地查看一下了，GitBash在博客所在位置输入如下命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo server</div></pre></td></tr></table></figure>
-<p>或懒人版:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo s</div></pre></td></tr></table></figure>
-<p>在 浏览器输入：</p>
-<p>localhost:4000</p>
-<p>就能查看了，效果如下：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/hexo_land_theme.png" alt="Hexo博客"></p>
-<h1 id="第四步：将博客部署到Github-Pages上"><a href="#第四步：将博客部署到Github-Pages上" class="headerlink" title="第四步：将博客部署到Github Pages上"></a>第四步：将博客部署到Github Pages上</h1><p>我们的博客目前只能在本地可见，其他人是无法访问到的，要想让别人看到你的博客，与世界接轨的话，你需要把博客部署到Github上。</p>
-<h3 id="先注册一个Github账号"><a href="#先注册一个Github账号" class="headerlink" title="先注册一个Github账号"></a>先注册一个Github账号</h3><p>这个没什么好说的，访问<a href="https://github.com" target="_blank" rel="external">Github</a>,点击右上角的<a href="https://github.com/join?source=header-home" target="_blank" rel="external"> Sign Up</a>，注册自己的账户。</p>
-<h3 id="创建Github-Page"><a href="#创建Github-Page" class="headerlink" title="创建Github Page"></a>创建Github Page</h3><p>“New Repository”创建你的Github Page仓库</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/github_page_new.png" alt="创建仓库"></p>
-<p>(报红是因为我的Github Page已经创建过了，大家实操中是不会有这个提示的)</p>
-<h3 id="仓库与Hexo文件关联"><a href="#仓库与Hexo文件关联" class="headerlink" title="仓库与Hexo文件关联"></a>仓库与Hexo文件关联</h3><p>访问刚才你创建好的Github仓库，复制你仓库的链接：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/github_copy_link.png" alt="github仓库"></p>
-<p>然后打开本地博客文件夹中的_config.yml文件</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/hexo_file_root.png" alt="Hexo 文件"></p>
-<p>修改deploy节点，填入你刚刚建好的Page 仓库地址：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/hexo_config_deploy.png" alt="修改config文件"></p>
-<h4 id="上传到Github"><a href="#上传到Github" class="headerlink" title="上传到Github"></a>上传到Github</h4><p>在博客文件中打开Git Bash,执行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
-<p>或</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g -d</div></pre></td></tr></table></figure>
-<p>然后按照提示输入你Github的账号和密码，然后文件经过Hexo处理后就会上传到Github。（温馨提示：输入密码时是没有星号或其他，你不要以为没输入或者没反应，照输就可以了。）</p>
-<h4 id="浏览器访问"><a href="#浏览器访问" class="headerlink" title="浏览器访问"></a>浏览器访问</h4><p>直接在浏览器输入你的Github Page名字即可。（你的Github用户名+.github.io）</p>
-<h1 id="换主题美化自己的博客"><a href="#换主题美化自己的博客" class="headerlink" title="换主题美化自己的博客"></a>换主题美化自己的博客</h1><p>博客建好了，但是我不喜欢默认的主题，怎么办？</p>
-<h3 id="首先，先去找找你喜欢的Hexo主题"><a href="#首先，先去找找你喜欢的Hexo主题" class="headerlink" title="首先，先去找找你喜欢的Hexo主题"></a>首先，先去找找你喜欢的<a href="https://hexo.io/themes/" target="_blank" rel="external">Hexo主题</a></h3><p>你可以到官网或者网络搜索你喜欢的Hexo主题，例如我所用的这款<a href="https://github.com/zhengxiaopeng/hexo-theme-icarus" target="_blank" rel="external">icarus</a>主题</p>
-<h3 id="进去逛逛"><a href="#进去逛逛" class="headerlink" title="进去逛逛"></a>进去逛逛</h3><p>先阅读下该主题的说明，了解清楚这款主题是不是你需要，还有，主题的制作者经常给主题添加或改动一些元素，你还要考虑自己是否能掌握这个主题。</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/hexo_icarus.png" alt="Icarus"></p>
-<p>以我使用的这款主题为例，按照说明文档，在博客文件夹用Git Bash执行 clone命令，完成打开 博客文件夹/theme/,会发现多了一个你clone的那个主题：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/hexo_theme_clone_finish.png" alt="Hexo theme"></p>
-<p>然后再次打开_config.yml，找到theme字段，修改为你想要的主题名字，例如：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/hexo_theme_modify.png" alt="Hexo 主题修改"></p>
-<p>然后Git Bash 执行 Hexo g Hexo s就可以在浏览器localhost:4000查看了。</p>
-<h1 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改_config.yml"></a>修改_config.yml</h1><p>前面提到的配置文件_config.yml可以说是你博客名片，里面你可以来修改你博客的各种个人信息，博客名之类的。</p>
-<p>那么我把我那份都放上来，重要的地方加上中文注释，大家应该看得懂：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div></pre></td><td class="code"><pre><div class="line"># Hexo Configuration</div><div class="line">## Docs: http://hexo.io/docs/configuration.html</div><div class="line">## Source: https://github.com/hexojs/hexo/</div><div class="line"></div><div class="line"># Site</div><div class="line">title: Longhui&apos;s Blog //博客名</div><div class="line">subtitle: 龙辉的博客 //子标题</div><div class="line">description: 渣渣龙辉的辣鸡博客 //描述说明</div><div class="line">author: CLH</div><div class="line">author_title: &apos;写Bug的&apos; //作者头衔，你可以填程序员啊~单身狗啊~会打代码的单身狗啊什么的</div><div class="line">avatar: css/images/avatar.png //头像图片，图片要放入对应的路径</div><div class="line">location: &apos;Fuzhou, China&apos;</div><div class="line">follow: https://github.com/longhui93/</div><div class="line">language: zh-CN //语言</div><div class="line">timezone:</div><div class="line">since: 2000 # The start year showing in your copyright section.</div><div class="line"></div><div class="line"># URL</div><div class="line">## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;</div><div class="line">url: https://longhui93.github.io //博客的URL</div><div class="line">root: /</div><div class="line">permalink: :year/:month/:day/:title/</div><div class="line">permalink_defaults:</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"># Directory</div><div class="line">source_dir: source</div><div class="line">public_dir: public</div><div class="line">tag_dir: tags</div><div class="line">archive_dir: archives</div><div class="line">category_dir: categories</div><div class="line">code_dir: downloads/code</div><div class="line">i18n_dir: :lang</div><div class="line">skip_render:</div><div class="line"></div><div class="line"># Writing</div><div class="line">new_post_name: :title.md # File name of new posts</div><div class="line">default_layout: post</div><div class="line">titlecase: false # Transform title into titlecase</div><div class="line">external_link: true # Open external links in new tab</div><div class="line">filename_case: 0</div><div class="line">render_drafts: false</div><div class="line">post_asset_folder: false</div><div class="line">relative_link: false</div><div class="line">future: true</div><div class="line">highlight:</div><div class="line">  enable: true</div><div class="line">  line_number: true</div><div class="line">  tab_replace:</div><div class="line"></div><div class="line"># Category &amp; Tag</div><div class="line">default_category: categories</div><div class="line">category_map:</div><div class="line">tag_map:</div><div class="line"></div><div class="line"># Date / Time format</div><div class="line">## Hexo uses Moment.js to parse and display date</div><div class="line">## You can customize the date format as defined in</div><div class="line">## http://momentjs.com/docs/#/displaying/format/</div><div class="line">date_format: YYYY-MM-DD</div><div class="line">time_format: HH:mm:ss</div><div class="line"></div><div class="line"># Pagination</div><div class="line">## Set per_page to 0 to disable pagination</div><div class="line">per_page: 0</div><div class="line">pagination_dir: page</div><div class="line"></div><div class="line"># Extensions</div><div class="line">## Plugins: https://github.com/hexojs/hexo/wiki/Plugins</div><div class="line">## Themes: https://github.com/hexojs/hexo/wiki/Themes</div><div class="line">theme: icarus</div><div class="line"># Header</div><div class="line">menu:</div><div class="line">  Categories: categories # -&gt; add this line</div><div class="line">  Tags: tags # -&gt; and add this line</div><div class="line"># Disqus</div><div class="line"># disqus_shortname: hexo-theme-icarus</div><div class="line"></div><div class="line"># DuoShuo</div><div class="line">duoshuo_shortname: longhui93 //多说短域名</div><div class="line"></div><div class="line"></div><div class="line"># Deployment</div><div class="line">## Docs: http://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/longhui93/longhui93.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<p>要记住，每个主题要求的配置文件声明要求不一定一致，记得详细阅读主题的说明文档，我只说出一些通用的。</p>
-<h1 id="添加多说评论"><a href="#添加多说评论" class="headerlink" title="添加多说评论"></a>添加多说评论</h1><p>博客嘛~肯定希望有人跟你交流的，那么怎样才能往自己的Hexo博客添加评论功能呢？较多人使用的两种选择，第一是国外的Diqus，另一种是多说。我选择多说呢是因为多说有这几点好：</p>
-<ul>
-<li>国内嘛~相对稳定</li>
-<li>自定义CSS比较方便，教程多，成品也多</li>
-</ul>
-<h3 id="站点加入多说"><a href="#站点加入多说" class="headerlink" title="站点加入多说"></a>站点加入多说</h3><p>那么怎么用呢，先去<a href="http://duoshuo.com/" target="_blank" rel="external">多说官网</a>，注册然后登录，进入后台管理-添加新站点，填写相应的信息：</p>
-<p><img src="http://ob0n8jfz1.bkt.clouddn.com/duoshuo.png" alt="多说"></p>
-<p>填写后你就可以到后台管理那里对你的站点进行相应的管理。</p>
-<p>像我的主题要加入多说的话只需将上图箭头所指的内容填写到_config.yml的duoshuo_shortname字段，其他主题请结合主题说明和多说-后台管理-工具里面的说明。</p>
-<h3 id="自定义CSS"><a href="#自定义CSS" class="headerlink" title="自定义CSS"></a>自定义CSS</h3><p>多说后台管理-设置-自定义CSS那里可以添加你自定的CSS，可以给你的评论框加特技，像我就修改了样式并且头像可以旋转，这些CSS网上有很多关键字“多说 自定义 CSS”就有很多，或者你可以参考<a href="http://dev.duoshuo.com/docs/4ff1cfd0397309552c000017" target="_blank" rel="external">官方教程</a>自己弄一个</p>
-<h3 id="上传到Github-1"><a href="#上传到Github-1" class="headerlink" title="上传到Github"></a>上传到Github</h3><p>修改好后，自己觉得满意，就可以Git Bash执行下面的命令行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean   (必须要，不然有时因为缓存问题，服务器更新不了主题)</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
-<p>上传到Github ，然后你就可以通过Github Page的域名访问你的博客了。</p>
-<h1 id="写文章-amp-上传"><a href="#写文章-amp-上传" class="headerlink" title="写文章&amp;上传"></a>写文章&amp;上传</h1><p>把你写好的Markdown文章放入 博客文件夹/source/_post 这个路径下，或者执行以下命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo n &quot;真实猛男&quot;</div></pre></td></tr></table></figure>
-<p>就会在source/_post文件生成 真实猛男.md 文件。</p>
-<p>最后，老生常谈，执行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo g </div><div class="line">$ hexo d</div></pre></td></tr></table></figure>
-<p>就可以在站点看见你写的文件了。</p>
-<p>那么，你的博客就已经搭好了，爽玩吧。</p>
-<h1 id="延伸阅读"><a href="#延伸阅读" class="headerlink" title="延伸阅读"></a>延伸阅读</h1><p>有余力的小伙伴还想再折腾折腾的话，可以看看这些：</p>
-<p><a href="http://blog.csdn.net/melordljm/article/details/51985129" target="_blank" rel="external">Hexo主题制作</a></p>
-<p><a href="https://rocko.xyz/2015/06/27/High%E4%B8%80%E4%B8%8B/" target="_blank" rel="external">High一下，让你的博客Duang起来</a></p>
-<p><a href="https://rocko.xyz/2015/03/10/Python%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%A4%9A%E8%AF%B4%E8%AF%84%E8%AE%BA%E9%80%9A%E7%9F%A5/" target="_blank" rel="external">Python小程序-多说评论通知</a></p>
-<h1 id="安利"><a href="#安利" class="headerlink" title="安利"></a>安利</h1><p>在此~推荐一下我朋友的博客：<a href="https://rocko.xyz/" target="_blank" rel="external">Rocko’s blog</a></p>
-<p>上面的延伸阅读有两篇是他的文章，他的其他文章对Android开发者也很用，从事的Android开发的伙伴们可以多去看看</p>
-<h1 id="博客更新预告"><a href="#博客更新预告" class="headerlink" title="博客更新预告"></a>博客更新预告</h1><p>嗯哼~既然博客都弄好了，不写点东西不行啊，所以每篇文章都要搞点下期预告才行，让大家督促督促我。(虽然没人来看的。。。)</p>
-<ul>
-<li>博客虽然搭好了，但是可以折腾的地方还是很多，例如加入第三方统计啊，购买域名啊什么的，这些我在下期弄出来给大家看看。</li>
-<li>之前工作的时候有个自定义键盘的需求，网上这方面的文章还是有点少，多算下期弄一篇，搞些代码给大家看看什么的。</li>
-</ul>
-<p>至于什么时候更新嘛~这个就真不好说了。</p>
-
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>那么建个博客是很简单的，但是程序员往往爱折腾爱作死，想自己搭。博客，说白了不就个网页吗，搞个服务器，搞点html，发布上去，不就完了。但是！好死不死你跟我一样是一名安卓开发者！又好死不死你跟我一样不懂服务器还不懂前端，网上一搜，别人的博客是用WordPress搞的动态博客，说啥都要一个服务器，好死不死你又跟我一样穷，那么，梦想破灭了吗？那倒不至于，有动就有静嘛~如果你是一个不懂服务器又不懂前端而且又想做自己的博客，可以，请跟着我的脚步，我会带你“真真正正”做一个属于你自己的博客。<br>
+        
+          <p class="article-more-link">
+            <a href="/2016/12/10/2016-12-11_hexo/#more">Read More</a>
+          </p>
+        
       
     </div>
     
    <!-- 加入打赏 -->
    <!-- 打赏 -->
 
+   
 
-<div class="article-entry">
-<div>
-    <hr>
-    <hr>
-<p><i class="fa fa-credit-card"></i> <strong>支付宝打赏</strong>
-<br>
-如果喜欢我的文章，可以支付宝随意打赏，支持我的工作</p>
-<img src="http://ob0n8jfz1.bkt.clouddn.com/zhifubao_qcode.png"/>
-  </div>
-</div>
 
     <footer class="article-footer">
-      <a data-url="clhdsb.site/2016/12/10/2016-12-11_hexo/" data-id="ciwv1vadq0002qkwt21dpttyh" class="article-share-link">分享到</a>
+      <a data-url="clhdsb.site/2016/12/10/2016-12-11_hexo/" data-id="ciwv3qsrj0000g0wtza4c4u7u" class="article-share-link">分享到</a>
       
         <a href="clhdsb.site/2016/12/10/2016-12-11_hexo/#comments" class="article-comment-link">去评论</a>
       
@@ -701,37 +526,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-                
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+        <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>
+        
+          <p class="article-more-link">
+            <a href="/2016/08/01/hello-world/#more">Read More</a>
+          </p>
+        
       
     </div>
     
    <!-- 加入打赏 -->
    <!-- 打赏 -->
 
+   
 
-<div class="article-entry">
-<div>
-    <hr>
-    <hr>
-<p><i class="fa fa-credit-card"></i> <strong>支付宝打赏</strong>
-<br>
-如果喜欢我的文章，可以支付宝随意打赏，支持我的工作</p>
-<img src="http://ob0n8jfz1.bkt.clouddn.com/zhifubao_qcode.png"/>
-  </div>
-</div>
 
     <footer class="article-footer">
-      <a data-url="clhdsb.site/2016/08/01/hello-world/" data-id="ciwv1vadj0000qkwtb1xc3rq4" class="article-share-link">分享到</a>
+      <a data-url="clhdsb.site/2016/08/01/hello-world/" data-id="ciwv3qsrx0005g0wteh6wu7ia" class="article-share-link">分享到</a>
       
         <a href="clhdsb.site/2016/08/01/hello-world/#comments" class="article-comment-link">去评论</a>
       
