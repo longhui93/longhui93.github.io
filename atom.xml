@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="clhdsb.site/"/>
-  <updated>2016-12-18T20:19:00.202Z</updated>
+  <updated>2016-12-18T20:39:45.355Z</updated>
   <id>clhdsb.site/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="clhdsb.site/2016/12/19/2016-12-18-Hexo%E4%B9%B1%E6%90%9E%E4%B9%8B%E4%BB%98%E5%87%BA%E4%B8%8E%E5%88%9B%E6%94%B6/"/>
     <id>clhdsb.site/2016/12/19/2016-12-18-Hexo乱搞之付出与创收/</id>
     <published>2016-12-18T16:00:00.000Z</published>
-    <updated>2016-12-18T20:19:00.202Z</updated>
+    <updated>2016-12-18T20:39:45.355Z</updated>
     
-    <content type="html"><![CDATA[<p>上一篇文章呢就给大家介绍怎样来搭建自己的一个Hexo博客，那么搭好了就又闲不住又想折腾折腾<del>（毕竟自己的博客嘛，搞坏了搞崩了也没人知道）</del>那么今天就如更新预告所说的那样，为大家带来Hexo的第二篇文章——Hexo乱搞之付出与创收。</p>
+    <content type="html"><![CDATA[<p>上一篇文章呢就给大家介绍怎样来搭建自己的一个Hexo博客，那么搭好了就又闲不住又想折腾折腾<del>（毕竟自己的博客嘛，搞坏了搞崩了也没人知道）</del>那么今天就如更新预告所说的那样，为大家带来Hexo的第二篇文章——Hexo小进阶之绑定域名加入统计和打赏。</p>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这期介绍的东西不多，但都是建立在第一篇文章<a href="http://clhdsb.site/2016/12/10/2016-12-11_hexo/">如何用Hexo搭建一个博客</a>的基础上的，没看的同学赶紧去看啊(•̀ᴗ•́)و ̑̑<br><a id="more"></a></p>
 <h1 id="第一步，要致富，先败家"><a href="#第一步，要致富，先败家" class="headerlink" title="第一步，要致富，先败家"></a>第一步，要致富，先败家</h1><p>嗯哼~要想别人记住你的博客，除了要写出高质量的文章外，最重要的还是要有一个好记的域名，那么话不多说，先搞个域名。</p>
 <p>域名呢是要买的，通常呢你可以到<a href="https://sg.godaddy.com/zh/" target="_blank" rel="external">狗爹(godaddy)</a>或者马云爸爸的<a href="https://wanwang.aliyun.com/" target="_blank" rel="external">万网</a>里面购买一个，我选择的是万网，大家可以根据这个来参考一下。</p>
@@ -87,7 +87,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;上一篇文章呢就给大家介绍怎样来搭建自己的一个Hexo博客，那么搭好了就又闲不住又想折腾折腾&lt;del&gt;（毕竟自己的博客嘛，搞坏了搞崩了也没人知道）&lt;/del&gt;那么今天就如更新预告所说的那样，为大家带来Hexo的第二篇文章——Hexo乱搞之付出与创收。&lt;/p&gt;
+      &lt;p&gt;上一篇文章呢就给大家介绍怎样来搭建自己的一个Hexo博客，那么搭好了就又闲不住又想折腾折腾&lt;del&gt;（毕竟自己的博客嘛，搞坏了搞崩了也没人知道）&lt;/del&gt;那么今天就如更新预告所说的那样，为大家带来Hexo的第二篇文章——Hexo小进阶之绑定域名加入统计和打赏。&lt;/p&gt;
 &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;这期介绍的东西不多，但都是建立在第一篇文章&lt;a href=&quot;http://clhdsb.site/2016/12/10/2016-12-11_hexo/&quot;&gt;如何用Hexo搭建一个博客&lt;/a&gt;的基础上的，没看的同学赶紧去看啊(•̀ᴗ•́)و ̑̑&lt;br&gt;
     
     </summary>
