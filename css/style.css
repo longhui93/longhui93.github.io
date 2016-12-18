@@ -1310,6 +1310,21 @@ ol.toc {
   -ms-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
+.article-end-text-wrap {
+  margin: 5px 0;
+}
+.article-end-text {
+  font-family: "微软雅黑";
+  font-size: 20px;
+  line-height: 1.6em;
+  text-align: center;
+  padding: 1em 2em;
+  background: #ddd;
+  -webkit-box-shadow: 1px 2px 3px #eceff2;
+  box-shadow: 1px 2px 3px #eceff2;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
 #comments {
   padding: 16px;
   margin: 36px 0;
