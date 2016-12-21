@@ -4,9 +4,9 @@
   <subtitle>龙辉的博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="clhdsb.site/"/>
+  <link href="/"/>
   <updated>2016-12-18T20:39:45.355Z</updated>
-  <id>clhdsb.site/</id>
+  <id>/</id>
   
   <author>
     <name>CLH</name>
@@ -17,19 +17,19 @@
   
   <entry>
     <title>Hexo小进阶之绑定域名加入统计和打赏</title>
-    <link href="clhdsb.site/2016/12/19/2016-12-18-Hexo%E4%B9%B1%E6%90%9E%E4%B9%8B%E4%BB%98%E5%87%BA%E4%B8%8E%E5%88%9B%E6%94%B6/"/>
-    <id>clhdsb.site/2016/12/19/2016-12-18-Hexo乱搞之付出与创收/</id>
+    <link href="/2016/12/19/2016-12-18-Hexo%E4%B9%B1%E6%90%9E%E4%B9%8B%E4%BB%98%E5%87%BA%E4%B8%8E%E5%88%9B%E6%94%B6/"/>
+    <id>/2016/12/19/2016-12-18-Hexo乱搞之付出与创收/</id>
     <published>2016-12-18T16:00:00.000Z</published>
     <updated>2016-12-18T20:39:45.355Z</updated>
     
     <content type="html"><![CDATA[<p>上一篇文章呢就给大家介绍怎样来搭建自己的一个Hexo博客，那么搭好了就又闲不住又想折腾折腾<del>（毕竟自己的博客嘛，搞坏了搞崩了也没人知道）</del>那么今天就如更新预告所说的那样，为大家带来Hexo的第二篇文章——Hexo小进阶之绑定域名加入统计和打赏。</p>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这期介绍的东西不多，但都是建立在第一篇文章<a href="http://clhdsb.site/2016/12/10/2016-12-11_hexo/">如何用Hexo搭建一个博客</a>的基础上的，没看的同学赶紧去看啊(•̀ᴗ•́)و ̑̑<br><a id="more"></a></p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这期介绍的东西不多，但都是建立在第一篇文章<a href="http://clhdsb.site/2016/12/10/2016-12-11_hexo/" target="_blank" rel="external">如何用Hexo搭建一个博客</a>的基础上的，没看的同学赶紧去看啊(•̀ᴗ•́)و ̑̑<br><a id="more"></a></p>
 <h1 id="第一步，要致富，先败家"><a href="#第一步，要致富，先败家" class="headerlink" title="第一步，要致富，先败家"></a>第一步，要致富，先败家</h1><p>嗯哼~要想别人记住你的博客，除了要写出高质量的文章外，最重要的还是要有一个好记的域名，那么话不多说，先搞个域名。</p>
 <p>域名呢是要买的，通常呢你可以到<a href="https://sg.godaddy.com/zh/" target="_blank" rel="external">狗爹(godaddy)</a>或者马云爸爸的<a href="https://wanwang.aliyun.com/" target="_blank" rel="external">万网</a>里面购买一个，我选择的是万网，大家可以根据这个来参考一下。</p>
 <p>先进去挑一个心仪的：</p>
 <p><img src="http://ob0n8jfz1.bkt.clouddn.com/wanwang_yuming.png" alt="万网"></p>
 <p>温馨提示：购买域名时不要只看第一年的价格，还要认真查看以后续费的价格，不能随随便便就中了马云的套路。</p>
-<p>我的域名是<a href="http://clhdsb.site/">clhdsb.site(clh大傻X)</a> 非常的好记。</p>
+<p>我的域名是<a href="http://clhdsb.site/" target="_blank" rel="external">clhdsb.site(clh大傻X)</a> 非常的好记。</p>
 <p>购买后进入万网的控制台→产品与服务→域名，进行域名管理：</p>
 <p><img src="http://ob0n8jfz1.bkt.clouddn.com/wanwang_console_yuming.png" alt="万网控制台"></p>
 <p>进入 域名管理后，点击解析：</p>
@@ -92,25 +92,25 @@
     
     </summary>
     
-      <category term="Hexo" scheme="clhdsb.site/categories/Hexo/"/>
+      <category term="Hexo" scheme="/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="clhdsb.site/tags/Hexo/"/>
+      <category term="Hexo" scheme="/tags/Hexo/"/>
     
-      <category term="进阶" scheme="clhdsb.site/tags/%E8%BF%9B%E9%98%B6/"/>
+      <category term="进阶" scheme="/tags/%E8%BF%9B%E9%98%B6/"/>
     
-      <category term="域名" scheme="clhdsb.site/tags/%E5%9F%9F%E5%90%8D/"/>
+      <category term="域名" scheme="/tags/%E5%9F%9F%E5%90%8D/"/>
     
-      <category term="统计" scheme="clhdsb.site/tags/%E7%BB%9F%E8%AE%A1/"/>
+      <category term="统计" scheme="/tags/%E7%BB%9F%E8%AE%A1/"/>
     
-      <category term="打赏" scheme="clhdsb.site/tags/%E6%89%93%E8%B5%8F/"/>
+      <category term="打赏" scheme="/tags/%E6%89%93%E8%B5%8F/"/>
     
   </entry>
   
   <entry>
     <title>如何用Hexo搭建一个博客</title>
-    <link href="clhdsb.site/2016/12/10/2016-12-11_hexo/"/>
-    <id>clhdsb.site/2016/12/10/2016-12-11_hexo/</id>
+    <link href="/2016/12/10/2016-12-11_hexo/"/>
+    <id>/2016/12/10/2016-12-11_hexo/</id>
     <published>2016-12-09T16:00:00.000Z</published>
     <updated>2016-12-18T19:47:01.421Z</updated>
     
@@ -229,15 +229,15 @@
     
     </summary>
     
-      <category term="Hexo" scheme="clhdsb.site/categories/Hexo/"/>
+      <category term="Hexo" scheme="/categories/Hexo/"/>
     
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="clhdsb.site/2016/08/01/hello-world/"/>
-    <id>clhdsb.site/2016/08/01/hello-world/</id>
+    <link href="/2016/08/01/hello-world/"/>
+    <id>/2016/08/01/hello-world/</id>
     <published>2016-07-31T19:45:46.748Z</published>
     <updated>2016-12-18T19:46:27.597Z</updated>
     
